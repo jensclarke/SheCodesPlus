@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="img/new_york_city_.png"
+          alt="NYC"
+          width="30px"
+          style="display: inline;"
+        /><strong>
+          <a href="#" id="header-currentcity">Current Location </a> | <a href="#" id="header-melbourne"> Melbourne</a> |
+        <a href="#" id="header-sydney">Sydney</a> |
+        <a href="#" id="header-newyorkcity">New York City</a> |
+        <a href="#" id="header-losangeles"> Los Angeles </a>|
+        <a href="#" id="celsius"><strong>°C </strong></a>|
+        <a href="#" id="fahrenheit">°F</a>
+      </header>
+      <div class="search-bar">
+        <form>
+          <input type="text" placeholder="Enter your city" id="search-field" />
+          <input
+            class="btn btn-info search-button"
+            type="button"
+            value="Search"
+            style="font-size: 14px;"
+          />
+        </form>
+      </div>
+      <div class="row weather-now">
+        <div class="col-4 weather-now-text">
+          <h2>
+            New York City
+          </h2>
+          <h3>
+            <div id="today-date">Tuesday 14:49</div>
+            ⛈ <br /><span id="today-temperature">25°C</span>
+          </h3>
+        </div>
+        <div class="col-8 weather-now-graph">
+          <img src="img/weather.png" alt="Graph" width="250px" />
+        </div>
+      </div>
+      <footer>
+        <div class="row">
+          <div class="col-md">
+            <h5><strong>Wednesday</strong><br />⚡️<br />25°C</h5>
+          </div>
+          <div class="col-md">
+            <h5><strong>Thursday</strong><br />☀️<br />31°C</h5>
+          </div>
+          <div class="col-md">
+            <h5><strong>Friday</strong><br />🌧<br />29°C</h5>
+          </div>
+          <div class="col-md">
+            <h5><strong>Saturday</strong><br />🌤<br />18°C</h5>
+          </div>
+          <div class="col-md">
+            <h5><strong>Sunday</strong><br />⛈<br />30°C</h5>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

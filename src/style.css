@@ -1,0 +1,63 @@
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: larger;
+}
+
+h2,
+h3 {
+  text-align: center;
+  font-weight: 900;
+}
+h3 {
+  font-size: smaller;
+}
+
+footer {
+  padding-top: 40px;
+}
+img {
+  border: 1px solid black;
+  margin: 0 auto;
+  display: block;
+}
+h5 {
+  background-color: #facece;
+  margin: 10px auto;
+  padding: 15px;
+}
+a {
+  font-style: normal;
+  color: black;
+}
+a:hover {
+  font-weight: bolder;
+}
+.container {
+  padding: 30px;
+}
+.col-md {
+  text-align: center;
+  display: block;
+}
+
+.header-melbourne:hover,
+.header-currentcity:hover,
+.header-sydney:hover,
+.header-newyorkcity:hover,
+.header-losangeles:hover {
+  font-weight: 800;
+  color: #1289f8;
+}
+.header-currentcity {
+  font-weight: 800;
+}
+.weather-now {
+  padding: 25px 0px 0px 17px;
+}
+.weather-now-text {
+  background-color: #b6ffef;
+  border-radius: 4px;
+  padding: 40px;
+  max-width: 250px;
+}
